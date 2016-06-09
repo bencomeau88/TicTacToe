@@ -1,64 +1,70 @@
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Tic Tac Toe</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css">
 </head>
+
 <body>
-	<!-- make a table with 3 rows of 3 columns -->
-<div id='welcomeBar'>
-<p>Welcome To The TicTable, Try your luck.</p>
-</div>
-<div class='buttons'>
-	<button class='learn'>Instructions</button>
-	<button class='newGame'>+New Game</button>
-</div>
-<div class='clicked'></div>
-	<div class="box">
-	<table class="ticTable"> 
-		
-		<tr class="top">
-			<td class='left'></td>
-			<td class='middle'></td>
-			<td class='right'></td>
-		</tr>
-		
-		<tr class='center'>
-			<td class='left'></td>
-			<td class='middle'></td>
-			<td class='right'></td>
-		</tr>	
-		
-		<tr class='bottom'>
-			<td class='left'></td>
-			<td class='middle'></td>
-			<td class='right'></td>
-		</tr>
-		
-	</table>
-
-	<div class='instructions' id='modal'>
-		<div class="content"> <h1><strong>What do You Do?</strong></h1>
-			<div>
-				<p>It is pretty easy, because you know the rules. Two Rules for this Game:</p>
-				 	<ul>
-				 		<li>1. Find Someone to Play With you</li>
-				 		<li>2. Take Turns Clicking, 'X' Always Goes First</li>
-				 	</ul>
-				 	<a class="close" href="#">Got It?</a>
-			</div>
-		</div> 
-		</div>
-	
-	<div class="results">
-		<h1>Game Over</h1>
-		<p class="xWon">'X' Won!</p>
-		<p class="oWon">'O' Won!</p>
-		<button class='replay'>Play Again?</button>
-	</div>
-
-	</div>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="app.js"></script>
+    <!-- make a table with 3 rows of 3 columns -->
+    <div id='welcomeBar'>
+        <p>Welcome To The TicTable, Try your luck.</p>
+    </div>
+    <div class='buttons'>
+        <button class='learn'>Instructions</button>
+        <button class='newGame'>+New Game</button>
+    </div>
+    <div class='clicked'></div>
+    <div class="box">
+        <div class="playerX">
+            Player X's Turn!
+        </div>
+        <div class="playerO">
+            Player O's Turn!
+        </div>
+        <table class="ticTable">
+            <tr class="top">
+                <td class='left'></td>
+                <td class='middle'></td>
+                <td class='right'></td>
+            </tr>
+            <tr class='center'>
+                <td class='left'></td>
+                <td class='middle'></td>
+                <td class='right'></td>
+            </tr>
+            <tr class='bottom'>
+                <td class='left'></td>
+                <td class='middle'></td>
+                <td class='right'></td>
+            </tr>
+        </table>
+        <div class='instructions' id='modal'>
+            <div class="content">
+                <h1><strong>What do You Do?</strong></h1>
+                <div>
+                    <p>It is pretty easy, because you know the rules. Two Rules for this Game:</p>
+                    <ul>
+                        <li>1. Find Someone to Play With you</li>
+                        <li>2. Take Turns Clicking, 'X' Always Goes First</li>
+                    </ul>
+                    <a class="close" href="#">Got It?</a>
+                </div>
+            </div>
+        </div>
+        <div class="results">
+            <h1>Game Over</h1>
+            <p class="xWon">'X' Won!</p>
+            <p class="oWon">'O' Won!</p>
+            <button class='replay'>Play Again?</button>
+        </div>
+    </div>
+    <script src="jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script src="app.js"></script>
 </body>
+
 </html>
