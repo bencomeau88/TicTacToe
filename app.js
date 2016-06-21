@@ -1,5 +1,4 @@
 //variables
-var turn = 0;
 var win = false;
 var winner = {
  X: "X Wins!",
@@ -61,6 +60,7 @@ $(document).ready(function() {
 
 // var winCheck = function(){
 
+
 // var tLeft = '.top td:nth-of-type(1)';
 // var tMiddle = '.top td:nth-of-type(2)';
 // var tRight = '.top td:nth-of-type(3)';
@@ -96,3 +96,4 @@ $(document).ready(function() {
 // var bLeft_X = $(bLeft).hasClass('X');
 // var bMiddle_X = $(bMiddle).hasClass('X');
 // var bRight_X = $(bRight).hasClass('X');
+
