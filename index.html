@@ -18,27 +18,21 @@
     </div>
     <div class='clicked'></div>
     <div class="box">
-        <div class="playerX">
-            Player X's Turn!
-        </div>
-        <div class="playerO">
-            Player O's Turn!
-        </div>
         <table class="ticTable">
             <tr class="top">
-                <td class='left'></td>
-                <td class='middle'></td>
-                <td class='right'></td>
+                <td data-index='0' class='cell left'></td>
+                <td data-index='1' class='cell middle'></td>
+                <td data-index='2' class='cell right'></td>
             </tr>
             <tr class='center'>
-                <td class='left'></td>
-                <td class='middle'></td>
-                <td class='right'></td>
+                <td data-index='3' class='cell left'></td>
+                <td data-index='4' class='cell middle'></td>
+                <td data-index='5' class='cell right'></td>
             </tr>
             <tr class='bottom'>
-                <td class='left'></td>
-                <td class='middle'></td>
-                <td class='right'></td>
+                <td data-index='6' class='cell left'></td>
+                <td data-index='7' class='cell middle'></td>
+                <td data-index='8' class='cell right'></td>
             </tr>
         </table>
         <div class='instructions' id='modal'>
@@ -56,15 +50,17 @@
         </div>
         <div class="results">
             <h1>Game Over</h1>
-            <p class="xWon">'X' Won!</p>
-            <p class="oWon">'O' Won!</p>
+            <p class="winner"></p>
+            <!-- <p class="oWon">'O' Won!</p> -->
             <button class='replay'>Play Again?</button>
         </div>
     </div>
     <script src="jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
     <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
     <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
     <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
 </body>
 
 </html>
