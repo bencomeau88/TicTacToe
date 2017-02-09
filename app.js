@@ -33,7 +33,7 @@ function checkwinners(){
     var line = [
     score[turn][set[0]],
     score[turn][set[1]],
-    score[turn][set[1]]
+    score[turn][set[2]]
     ];
     console.log(line, condition);
 
